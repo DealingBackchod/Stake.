@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Stake Clone - Dice</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Dice Game</h1>
+    <a href="index.html">Back to Mines</a>
+  </div>
+  <div class="game">
+    <button onclick="rollDice()">Roll</button>
+    <p>Result: <span id="dice-result">-</span></p>
+  </div>
+  <script>
+    function rollDice() {
+      const result = Math.floor(Math.random() * 100) + 1;
+      document.getElementById("dice-result").textContent = result;
+    }
+  </script>
+</body>
+</html>
